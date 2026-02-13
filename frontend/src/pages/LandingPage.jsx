@@ -305,7 +305,7 @@ function LandingPage() {
             <p className="text-slate-400 text-lg" data-testid="pricing-subtitle">Start free, upgrade when you're ready</p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
             {/* Free Tier */}
             <div className="bg-slate-900/50 border border-slate-800 p-8 rounded-xl" data-testid="pricing-free-card">
               <h3 className="font-heading font-bold text-2xl mb-2">Free Course</h3>
@@ -338,50 +338,61 @@ function LandingPage() {
               </Link>
             </div>
 
-            {/* Premium Tier */}
-            <div className="bg-slate-900/50 border-2 border-accent-gold p-8 rounded-xl pricing-card-glow relative" data-testid="pricing-premium-card">
-              <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-gradient-to-r from-amber-200 to-yellow-500 text-slate-950 px-4 py-1 rounded-full text-sm font-bold">
-                BEST VALUE
-              </div>
-              <h3 className="font-heading font-bold text-2xl mb-2">Premium Access</h3>
-              <div className="mb-6">
-                <span className="text-4xl font-bold gold-gradient-text">$97</span>
-                <span className="text-slate-400">/month</span>
-              </div>
-              <ul className="space-y-3 mb-8">
-                <li className="flex items-start">
-                  <CheckCircle className="text-accent-gold mr-3 mt-0.5 flex-shrink-0" size={20} />
-                  <span className="text-slate-300">Everything in Free</span>
-                </li>
-                <li className="flex items-start">
-                  <CheckCircle className="text-accent-gold mr-3 mt-0.5 flex-shrink-0" size={20} />
-                  <span className="text-slate-300">Advanced trading strategies</span>
-                </li>
-                <li className="flex items-start">
-                  <CheckCircle className="text-accent-gold mr-3 mt-0.5 flex-shrink-0" size={20} />
-                  <span className="text-slate-300">Live trading sessions</span>
-                </li>
-                <li className="flex items-start">
-                  <CheckCircle className="text-accent-gold mr-3 mt-0.5 flex-shrink-0" size={20} />
-                  <span className="text-slate-300">1-on-1 mentorship</span>
-                </li>
-                <li className="flex items-start">
-                  <CheckCircle className="text-accent-gold mr-3 mt-0.5 flex-shrink-0" size={20} />
-                  <span className="text-slate-300">Exclusive market analysis</span>
-                </li>
-                <li className="flex items-start">
-                  <CheckCircle className="text-accent-gold mr-3 mt-0.5 flex-shrink-0" size={20} />
-                  <span className="text-slate-300">Private Discord community</span>
-                </li>
-              </ul>
-              <Button 
-                onClick={() => setShowAuthModal(true)}
-                className="w-full bg-gradient-to-r from-amber-200 to-yellow-500 text-slate-950 font-bold hover:shadow-[0_0_30px_rgba(212,175,55,0.6)]"
-                data-testid="pricing-premium-btn"
-              >
-                Get Premium Access
-              </Button>
-            </div>
+            {/* Starter Plan */}
+<div className="bg-slate-900/60 border border-slate-700 p-8 rounded-xl text-center">
+  <h3 className="text-2xl font-bold mb-4">Starter</h3>
+  <div className="mb-4">
+    <span className="text-4xl font-bold">$20</span>
+    <span className="text-slate-400">/month</span>
+  </div>
+  <p className="text-green-400 font-semibold mb-4">🔥 50% OFF Limited Offer</p>
+  <ul className="space-y-2 text-slate-300 mb-6">
+    <li>Beginner Strategies</li>
+    <li>Community Access</li>
+    <li>Basic Lessons</li>
+  </ul>
+  <button className="w-full bg-blue-600 hover:bg-blue-500 py-2 rounded-lg">
+    Get Started
+  </button>
+</div>
+
+{/* Pro Plan */}
+<div className="bg-slate-900/70 border-2 border-yellow-500 p-8 rounded-xl text-center shadow-xl">
+  <h3 className="text-2xl font-bold mb-4">Pro</h3>
+  <div className="mb-4">
+    <span className="text-4xl font-bold">$50</span>
+    <span className="text-slate-400">/month</span>
+  </div>
+  <p className="text-yellow-400 font-semibold mb-4">⭐ Most Popular</p>
+  <ul className="space-y-2 text-slate-300 mb-6">
+    <li>Everything in Starter</li>
+    <li>Advanced Strategies</li>
+    <li>Live Sessions</li>
+    <li>Market Analysis</li>
+  </ul>
+  <button className="w-full bg-yellow-500 hover:bg-yellow-400 text-black py-2 rounded-lg">
+    Upgrade Now
+  </button>
+</div>
+
+{/* Elite Plan */}
+<div className="bg-slate-900/60 border border-slate-700 p-8 rounded-xl text-center">
+  <h3 className="text-2xl font-bold mb-4">Elite</h3>
+  <div className="mb-4">
+    <span className="text-4xl font-bold">$97</span>
+    <span className="text-slate-400">/month</span>
+  </div>
+  <p className="text-green-400 font-semibold mb-4">🚀 50% OFF Today</p>
+  <ul className="space-y-2 text-slate-300 mb-6">
+    <li>Everything in Pro</li>
+    <li>1-on-1 Mentorship</li>
+    <li>Private Discord</li>
+    <li>Priority Support</li>
+  </ul>
+  <button className="w-full bg-blue-600 hover:bg-blue-500 py-2 rounded-lg">
+    Go Elite
+  </button>
+</div>
           </div>
         </div>
       </section>
