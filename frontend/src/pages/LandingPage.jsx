@@ -355,7 +355,7 @@ function LandingPage() {
     Get Started
   </button>
 </div>
-
+{/*
 {/* Pro Plan */}
 <div className="bg-slate-900/70 border-2 border-yellow-500 p-8 rounded-xl text-center shadow-xl">
   <h3 className="text-2xl font-bold mb-4">Pro</h3>
@@ -393,7 +393,8 @@ function LandingPage() {
     Go Elite
   </button>
 </div>
-          </div>
+*/}
+        </div>
         </div>
       </section>
 
