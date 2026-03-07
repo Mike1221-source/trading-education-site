@@ -298,7 +298,7 @@ function LandingPage() {
       </section>
 
   
-  {/* Pricing */}
+{/* Pricing */}
 <section id="pricing" className="py-24 px-4" data-testid="pricing-section">
   <div className="max-w-7xl mx-auto">
     <div className="text-center mb-16">
@@ -317,15 +317,11 @@ function LandingPage() {
         <ul className="space-y-3 mb-8 flex-1">
           <li className="flex items-start">
             <CheckCircle className="text-blue-500 mr-3 mt-0.5 flex-shrink-0" size={20} />
-            <span className="text-slate-300"><strong>5 lessons:</strong> Candlesticks, Market Structure, Support/Resistance, Trend, Entry Basics</span>
+            <span className="text-slate-300"><strong>5 video lessons:</strong> Candlesticks, Market Structure, Support/Resistance, Trend, Entry Basics</span>
           </li>
           <li className="flex items-start">
             <CheckCircle className="text-blue-500 mr-3 mt-0.5 flex-shrink-0" size={20} />
             <span className="text-slate-300">✓ Printable candlestick cheat sheet (PDF)</span>
-          </li>
-          <li className="flex items-start">
-            <CheckCircle className="text-blue-500 mr-3 mt-0.5 flex-shrink-0" size={20} />
-            <span className="text-slate-300">Community access</span>
           </li>
         </ul>
         <Link to="/free-course" className="w-full">
@@ -343,11 +339,10 @@ function LandingPage() {
           <span className="text-4xl font-bold">$27</span>
           <span className="text-slate-400">/one-time</span>
         </div>
-        <p className="text-green-400 font-semibold mb-4 text-sm">Launch Special</p>
         <ul className="space-y-3 mb-8 flex-1">
           <li className="flex items-start">
             <CheckCircle className="text-blue-500 mr-3 mt-0.5 flex-shrink-0" size={20} />
-            <span className="text-slate-300"><strong>5 lessons:</strong> Supply/Demand, Liquidity, Breakouts, Fake Breakouts, Risk Management Basics</span>
+            <span className="text-slate-300"><strong>5 video lessons:</strong> Supply/Demand, Liquidity, Breakouts, Fake Breakouts, Risk Management Basics</span>
           </li>
           <li className="flex items-start">
             <CheckCircle className="text-blue-500 mr-3 mt-0.5 flex-shrink-0" size={20} />
@@ -355,11 +350,7 @@ function LandingPage() {
           </li>
           <li className="flex items-start">
             <CheckCircle className="text-blue-500 mr-3 mt-0.5 flex-shrink-0" size={20} />
-            <span className="text-slate-300">✓ 1-month Telegram access</span>
-          </li>
-          <li className="flex items-start">
-            <CheckCircle className="text-blue-500 mr-3 mt-0.5 flex-shrink-0" size={20} />
-            <span className="text-slate-300">Community access</span>
+            <span className="text-slate-300">✓ Risk management worksheet (PDF)</span>
           </li>
         </ul>
         <Button className="w-full bg-blue-600 hover:bg-blue-500" data-testid="pricing-essentials-btn">
@@ -369,7 +360,7 @@ function LandingPage() {
 
       {/* Mastery ($67) */}
       <div className="bg-slate-900/70 border-2 border-yellow-500 p-8 rounded-xl flex flex-col relative shadow-xl" data-testid="pricing-mastery-card">
-        <div className="absolute top-0 right-0 bg-yellow-500 text-black text-xs font-bold px-3 py-1 rounded-bl-lg rounded-tr-lg">⭐ MOST POPULAR</div>
+        <div className="absolute top-0 right-0 bg-yellow-500 text-black text-xs font-bold px-3 py-1 rounded-bl-lg rounded-tr-lg">⭐ 50% OFF</div>
         <h3 className="font-heading font-bold text-2xl mb-2">Mastery</h3>
         <div className="mb-6">
           <span className="text-4xl font-bold">$67</span>
@@ -378,7 +369,7 @@ function LandingPage() {
         <ul className="space-y-3 mb-8 flex-1">
           <li className="flex items-start">
             <CheckCircle className="text-blue-500 mr-3 mt-0.5 flex-shrink-0" size={20} />
-            <span className="text-slate-300"><strong>5 lessons:</strong> Advanced Structure, Entry Confirmation, Sniper Entry, Psychology, Session Strategy</span>
+            <span className="text-slate-300"><strong>5 video lessons:</strong> Advanced Structure, Entry Confirmation, Sniper Entry, Psychology, Session Strategy</span>
           </li>
           <li className="flex items-start">
             <CheckCircle className="text-blue-500 mr-3 mt-0.5 flex-shrink-0" size={20} />
@@ -386,15 +377,11 @@ function LandingPage() {
           </li>
           <li className="flex items-start">
             <CheckCircle className="text-blue-500 mr-3 mt-0.5 flex-shrink-0" size={20} />
-            <span className="text-slate-300">✓ Indicators Pack (3 custom indicators)</span>
+            <span className="text-slate-300">✓ Advanced patterns PDF guide</span>
           </li>
           <li className="flex items-start">
             <CheckCircle className="text-blue-500 mr-3 mt-0.5 flex-shrink-0" size={20} />
-            <span className="text-slate-300">✓ 1-month market analysis video</span>
-          </li>
-          <li className="flex items-start">
-            <CheckCircle className="text-blue-500 mr-3 mt-0.5 flex-shrink-0" size={20} />
-            <span className="text-slate-300">Community access</span>
+            <span className="text-slate-300">✓ Trading journal template (PDF)</span>
           </li>
         </ul>
         <Button className="w-full bg-yellow-500 hover:bg-yellow-400 text-black" data-testid="pricing-mastery-btn">
@@ -404,7 +391,7 @@ function LandingPage() {
 
       {/* Institutional ($147) */}
       <div className="bg-slate-900/60 border border-slate-700 p-8 rounded-xl flex flex-col relative" data-testid="pricing-institutional-card">
-        <div className="absolute top-0 right-0 bg-purple-500 text-white text-xs font-bold px-3 py-1 rounded-bl-lg rounded-tr-lg">🚀 COMPLETE SYSTEM</div>
+        <div className="absolute top-0 right-0 bg-purple-500 text-white text-xs font-bold px-3 py-1 rounded-bl-lg rounded-tr-lg">🚀 50% OFF</div>
         <h3 className="font-heading font-bold text-2xl mb-2">Institutional</h3>
         <div className="mb-6">
           <span className="text-4xl font-bold">$147</span>
@@ -413,7 +400,7 @@ function LandingPage() {
         <ul className="space-y-3 mb-8 flex-1">
           <li className="flex items-start">
             <CheckCircle className="text-blue-500 mr-3 mt-0.5 flex-shrink-0" size={20} />
-            <span className="text-slate-300"><strong>5 lessons:</strong> Institutional Concepts, Smart Money Basics, Liquidity Sweep, Complete Trading Plan, Professional System</span>
+            <span className="text-slate-300"><strong>5 video lessons:</strong> Institutional Concepts, Smart Money Basics, Liquidity Sweep, Complete Trading Plan, Professional System</span>
           </li>
           <li className="flex items-start">
             <CheckCircle className="text-blue-500 mr-3 mt-0.5 flex-shrink-0" size={20} />
@@ -421,19 +408,11 @@ function LandingPage() {
           </li>
           <li className="flex items-start">
             <CheckCircle className="text-blue-500 mr-3 mt-0.5 flex-shrink-0" size={20} />
-            <span className="text-slate-300">✓ 1-hour 1-on-1 coaching</span>
+            <span className="text-slate-300">✓ Complete trading plan template (PDF)</span>
           </li>
           <li className="flex items-start">
             <CheckCircle className="text-blue-500 mr-3 mt-0.5 flex-shrink-0" size={20} />
-            <span className="text-slate-300">✓ Lifetime updates</span>
-          </li>
-          <li className="flex items-start">
-            <CheckCircle className="text-blue-500 mr-3 mt-0.5 flex-shrink-0" size={20} />
-            <span className="text-slate-300">✓ Private Discord</span>
-          </li>
-          <li className="flex items-start">
-            <CheckCircle className="text-blue-500 mr-3 mt-0.5 flex-shrink-0" size={20} />
-            <span className="text-slate-300">Priority support</span>
+            <span className="text-slate-300">✓ Smart Money cheatsheet (PDF)</span>
           </li>
         </ul>
         <Button className="w-full bg-blue-600 hover:bg-blue-500" data-testid="pricing-institutional-btn">
@@ -442,7 +421,7 @@ function LandingPage() {
       </div>
     </div>
   </div>
-</section>    
+</section>
 
       {/* Footer */}
       <footer className="bg-surface py-12 px-4 border-t border-white/10" data-testid="footer">
