@@ -297,106 +297,152 @@ function LandingPage() {
         </div>
       </section>
 
-      {/* Pricing */}
-      <section id="pricing" className="py-24 px-4" data-testid="pricing-section">
-        <div className="max-w-7xl mx-auto">
-          <div className="text-center mb-16">
-            <h2 className="font-heading font-bold text-3xl sm:text-4xl mb-4" data-testid="pricing-title">Choose Your Path</h2>
-            <p className="text-slate-400 text-lg" data-testid="pricing-subtitle">Start free, upgrade when you're ready</p>
-          </div>
+  
+  {/* Pricing */}
+<section id="pricing" className="py-24 px-4" data-testid="pricing-section">
+  <div className="max-w-7xl mx-auto">
+    <div className="text-center mb-16">
+      <h2 className="font-heading font-bold text-3xl sm:text-4xl mb-4" data-testid="pricing-title">Choose Your Path</h2>
+      <p className="text-slate-400 text-lg" data-testid="pricing-subtitle">Start free, upgrade when you're ready</p>
+    </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
-            {/* Free Tier */}
-            <div className="bg-slate-900/50 border border-slate-800 p-8 rounded-xl" data-testid="pricing-free-card">
-              <h3 className="font-heading font-bold text-2xl mb-2">Free Course</h3>
-              <div className="mb-6">
-                <span className="text-4xl font-bold">$0</span>
-                <span className="text-slate-400">/forever</span>
-              </div>
-              <ul className="space-y-3 mb-8">
-                <li className="flex items-start">
-                  <CheckCircle className="text-blue-500 mr-3 mt-0.5 flex-shrink-0" size={20} />
-                  <span className="text-slate-300">Beginner trading fundamentals</span>
-                </li>
-                <li className="flex items-start">
-                  <CheckCircle className="text-blue-500 mr-3 mt-0.5 flex-shrink-0" size={20} />
-                  <span className="text-slate-300">5 core lessons</span>
-                </li>
-                <li className="flex items-start">
-                  <CheckCircle className="text-blue-500 mr-3 mt-0.5 flex-shrink-0" size={20} />
-                  <span className="text-slate-300">Community access</span>
-                </li>
-                <li className="flex items-start">
-                  <CheckCircle className="text-blue-500 mr-3 mt-0.5 flex-shrink-0" size={20} />
-                  <span className="text-slate-300">Free PDF guide</span>
-                </li>
-              </ul>
-              <Link to="/free-course">
-                <Button className="w-full bg-blue-600 hover:bg-blue-500" data-testid="pricing-free-btn">
-                  Start Free Course
-                </Button>
-              </Link>
-            </div>
-
-            {/* Starter Plan */}
-<div className="bg-slate-900/60 border border-slate-700 p-8 rounded-xl text-center">
-  <h3 className="text-2xl font-bold mb-4">Starter</h3>
-  <div className="mb-4">
-    <span className="text-4xl font-bold">$20</span>
-    <span className="text-slate-400">/month</span>
-  </div>
-  <p className="text-green-400 font-semibold mb-4">🔥 50% OFF Limited Offer</p>
-  <ul className="space-y-2 text-slate-300 mb-6">
-    <li>Beginner Strategies</li>
-    <li>Community Access</li>
-    <li>Basic Lessons</li>
-  </ul>
-  <button className="w-full bg-blue-600 hover:bg-blue-500 py-2 rounded-lg">
-    Get Started
-  </button>
-</div>
-{/*
-{/* Pro Plan */}
-<div className="bg-slate-900/70 border-2 border-yellow-500 p-8 rounded-xl text-center shadow-xl">
-  <h3 className="text-2xl font-bold mb-4">Pro</h3>
-  <div className="mb-4">
-    <span className="text-4xl font-bold">$50</span>
-    <span className="text-slate-400">/month</span>
-  </div>
-  <p className="text-yellow-400 font-semibold mb-4">⭐ Most Popular</p>
-  <ul className="space-y-2 text-slate-300 mb-6">
-    <li>Everything in Starter</li>
-    <li>Advanced Strategies</li>
-    <li>Live Sessions</li>
-    <li>Market Analysis</li>
-  </ul>
-  <button className="w-full bg-yellow-500 hover:bg-yellow-400 text-black py-2 rounded-lg">
-    Upgrade Now
-  </button>
-</div>
-
-{/* Elite Plan */}
-<div className="bg-slate-900/60 border border-slate-700 p-8 rounded-xl text-center">
-  <h3 className="text-2xl font-bold mb-4">Elite</h3>
-  <div className="mb-4">
-    <span className="text-4xl font-bold">$97</span>
-    <span className="text-slate-400">/month</span>
-  </div>
-  <p className="text-green-400 font-semibold mb-4">🚀 50% OFF Today</p>
-  <ul className="space-y-2 text-slate-300 mb-6">
-    <li>Everything in Pro</li>
-    <li>1-on-1 Mentorship</li>
-    <li>Private Discord</li>
-    <li>Priority Support</li>
-  </ul>
-  <button className="w-full bg-blue-600 hover:bg-blue-500 py-2 rounded-lg">
-    Go Elite
-  </button>
-</div>
-*/}
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+      {/* Foundation (Free) */}
+      <div className="bg-slate-900/50 border border-slate-800 p-8 rounded-xl flex flex-col" data-testid="pricing-foundation-card">
+        <h3 className="font-heading font-bold text-2xl mb-2">Foundation</h3>
+        <div className="mb-6">
+          <span className="text-4xl font-bold">$0</span>
+          <span className="text-slate-400">/forever</span>
         </div>
+        <ul className="space-y-3 mb-8 flex-1">
+          <li className="flex items-start">
+            <CheckCircle className="text-blue-500 mr-3 mt-0.5 flex-shrink-0" size={20} />
+            <span className="text-slate-300"><strong>5 lessons:</strong> Candlesticks, Market Structure, Support/Resistance, Trend, Entry Basics</span>
+          </li>
+          <li className="flex items-start">
+            <CheckCircle className="text-blue-500 mr-3 mt-0.5 flex-shrink-0" size={20} />
+            <span className="text-slate-300">✓ Printable candlestick cheat sheet (PDF)</span>
+          </li>
+          <li className="flex items-start">
+            <CheckCircle className="text-blue-500 mr-3 mt-0.5 flex-shrink-0" size={20} />
+            <span className="text-slate-300">Community access</span>
+          </li>
+        </ul>
+        <Link to="/free-course" className="w-full">
+          <Button className="w-full bg-blue-600 hover:bg-blue-500" data-testid="pricing-foundation-btn">
+            Start Free Course
+          </Button>
+        </Link>
+      </div>
+
+      {/* Essentials ($27) */}
+      <div className="bg-slate-900/60 border border-slate-700 p-8 rounded-xl flex flex-col relative" data-testid="pricing-essentials-card">
+        <div className="absolute top-0 right-0 bg-green-500 text-black text-xs font-bold px-3 py-1 rounded-bl-lg rounded-tr-lg">🔥 50% OFF</div>
+        <h3 className="font-heading font-bold text-2xl mb-2">Essentials</h3>
+        <div className="mb-6">
+          <span className="text-4xl font-bold">$27</span>
+          <span className="text-slate-400">/one-time</span>
         </div>
-      </section>
+        <p className="text-green-400 font-semibold mb-4 text-sm">Launch Special</p>
+        <ul className="space-y-3 mb-8 flex-1">
+          <li className="flex items-start">
+            <CheckCircle className="text-blue-500 mr-3 mt-0.5 flex-shrink-0" size={20} />
+            <span className="text-slate-300"><strong>5 lessons:</strong> Supply/Demand, Liquidity, Breakouts, Fake Breakouts, Risk Management Basics</span>
+          </li>
+          <li className="flex items-start">
+            <CheckCircle className="text-blue-500 mr-3 mt-0.5 flex-shrink-0" size={20} />
+            <span className="text-slate-300">✓ Entry/Exit cheat sheet (PDF)</span>
+          </li>
+          <li className="flex items-start">
+            <CheckCircle className="text-blue-500 mr-3 mt-0.5 flex-shrink-0" size={20} />
+            <span className="text-slate-300">✓ 1-month Telegram access</span>
+          </li>
+          <li className="flex items-start">
+            <CheckCircle className="text-blue-500 mr-3 mt-0.5 flex-shrink-0" size={20} />
+            <span className="text-slate-300">Community access</span>
+          </li>
+        </ul>
+        <Button className="w-full bg-blue-600 hover:bg-blue-500" data-testid="pricing-essentials-btn">
+          Get Essentials
+        </Button>
+      </div>
+
+      {/* Mastery ($67) */}
+      <div className="bg-slate-900/70 border-2 border-yellow-500 p-8 rounded-xl flex flex-col relative shadow-xl" data-testid="pricing-mastery-card">
+        <div className="absolute top-0 right-0 bg-yellow-500 text-black text-xs font-bold px-3 py-1 rounded-bl-lg rounded-tr-lg">⭐ MOST POPULAR</div>
+        <h3 className="font-heading font-bold text-2xl mb-2">Mastery</h3>
+        <div className="mb-6">
+          <span className="text-4xl font-bold">$67</span>
+          <span className="text-slate-400">/one-time</span>
+        </div>
+        <ul className="space-y-3 mb-8 flex-1">
+          <li className="flex items-start">
+            <CheckCircle className="text-blue-500 mr-3 mt-0.5 flex-shrink-0" size={20} />
+            <span className="text-slate-300"><strong>5 lessons:</strong> Advanced Structure, Entry Confirmation, Sniper Entry, Psychology, Session Strategy</span>
+          </li>
+          <li className="flex items-start">
+            <CheckCircle className="text-blue-500 mr-3 mt-0.5 flex-shrink-0" size={20} />
+            <span className="text-slate-300">✓ Everything in Essentials</span>
+          </li>
+          <li className="flex items-start">
+            <CheckCircle className="text-blue-500 mr-3 mt-0.5 flex-shrink-0" size={20} />
+            <span className="text-slate-300">✓ Indicators Pack (3 custom indicators)</span>
+          </li>
+          <li className="flex items-start">
+            <CheckCircle className="text-blue-500 mr-3 mt-0.5 flex-shrink-0" size={20} />
+            <span className="text-slate-300">✓ 1-month market analysis video</span>
+          </li>
+          <li className="flex items-start">
+            <CheckCircle className="text-blue-500 mr-3 mt-0.5 flex-shrink-0" size={20} />
+            <span className="text-slate-300">Community access</span>
+          </li>
+        </ul>
+        <Button className="w-full bg-yellow-500 hover:bg-yellow-400 text-black" data-testid="pricing-mastery-btn">
+          Get Mastery
+        </Button>
+      </div>
+
+      {/* Institutional ($147) */}
+      <div className="bg-slate-900/60 border border-slate-700 p-8 rounded-xl flex flex-col relative" data-testid="pricing-institutional-card">
+        <div className="absolute top-0 right-0 bg-purple-500 text-white text-xs font-bold px-3 py-1 rounded-bl-lg rounded-tr-lg">🚀 COMPLETE SYSTEM</div>
+        <h3 className="font-heading font-bold text-2xl mb-2">Institutional</h3>
+        <div className="mb-6">
+          <span className="text-4xl font-bold">$147</span>
+          <span className="text-slate-400">/one-time</span>
+        </div>
+        <ul className="space-y-3 mb-8 flex-1">
+          <li className="flex items-start">
+            <CheckCircle className="text-blue-500 mr-3 mt-0.5 flex-shrink-0" size={20} />
+            <span className="text-slate-300"><strong>5 lessons:</strong> Institutional Concepts, Smart Money Basics, Liquidity Sweep, Complete Trading Plan, Professional System</span>
+          </li>
+          <li className="flex items-start">
+            <CheckCircle className="text-blue-500 mr-3 mt-0.5 flex-shrink-0" size={20} />
+            <span className="text-slate-300">✓ Everything in Mastery</span>
+          </li>
+          <li className="flex items-start">
+            <CheckCircle className="text-blue-500 mr-3 mt-0.5 flex-shrink-0" size={20} />
+            <span className="text-slate-300">✓ 1-hour 1-on-1 coaching</span>
+          </li>
+          <li className="flex items-start">
+            <CheckCircle className="text-blue-500 mr-3 mt-0.5 flex-shrink-0" size={20} />
+            <span className="text-slate-300">✓ Lifetime updates</span>
+          </li>
+          <li className="flex items-start">
+            <CheckCircle className="text-blue-500 mr-3 mt-0.5 flex-shrink-0" size={20} />
+            <span className="text-slate-300">✓ Private Discord</span>
+          </li>
+          <li className="flex items-start">
+            <CheckCircle className="text-blue-500 mr-3 mt-0.5 flex-shrink-0" size={20} />
+            <span className="text-slate-300">Priority support</span>
+          </li>
+        </ul>
+        <Button className="w-full bg-blue-600 hover:bg-blue-500" data-testid="pricing-institutional-btn">
+          Join Institutional
+        </Button>
+      </div>
+    </div>
+  </div>
+</section>    
 
       {/* Footer */}
       <footer className="bg-surface py-12 px-4 border-t border-white/10" data-testid="footer">
